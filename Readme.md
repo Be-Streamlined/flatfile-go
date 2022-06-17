@@ -1,6 +1,7 @@
 # flatfile-go
 
 [![Documentation](https://godoc.org/github.com/be-streamlined/flatfile-go?status.svg)](http://godoc.org/github.com/be-streamlined/flatfile-go)
+[![CI](https://github.com/Be-Streamlined/flatfile-go/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/Be-Streamlined/flatfile-go/actions/workflows/ci.yaml)
 
 A package to interface with the [Flatfile](https://flatfile.com) APIs.
 
