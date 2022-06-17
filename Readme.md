@@ -1,5 +1,7 @@
 # flatfile-go
 
+[![Documentation](https://godoc.org/github.com/be-streamlined/flatfile-go?status.svg)](http://godoc.org/github.com/be-streamlined/flatfile-go)
+
 A package to interface with the [Flatfile](https://flatfile.com) APIs.
 
 
