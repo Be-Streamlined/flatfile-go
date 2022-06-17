@@ -38,6 +38,18 @@ func (f *FlatfileConfig) FillDefaults() {
 	}
 }
 
+func (f *FlatfileConfig) VerifyEnvironment() error {
+	if f.ApiKey == "" || f.SecretApiKey == "" || f.LicenseKey == "" || f.BaseURL == "" {
+		return Err_Invalid_Config
+	}
+
+	if _, err := url.Parse(f.BaseURL); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *FlatfileConfig) buildURL(p string, query map[string]string) (string, error) {
 	parsedURL, err := url.Parse(f.BaseURL)
 	if err != nil {
